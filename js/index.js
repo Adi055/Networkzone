@@ -85,8 +85,10 @@ let companyFormDataArray = []; // Array to store company form data
     let currentCompanyFormIndex = 0;
     let currentJobFormIndex = 0;
     let currentStep=1
-        
-      
+    let steps=1
+    const postButton = $('<button class="post" type="button">Post</button>').hide();
+    $('.button-section').append(postButton);
+
         function saveCompanyFormData() {
             let companyFormData = {
                 company_name: $('#company_name').val(),
@@ -273,6 +275,15 @@ const updateProgress = () => {
     }
 };
 
+function updateButtonVisibility() {
+    if (currentStep === 3) {
+        $('.next').hide();
+        postButton.show();
+    } else {
+        $('.next').show();
+        postButton.hide();
+    }
+}
 
 
 $('.next').on("click", () => {
@@ -282,7 +293,6 @@ $('.next').on("click", () => {
             return; // Prevent moving to the next step
         }
         currentStep++
-        console.log(currentStep);
         saveCompanyFormData();
         currentCompanyFormIndex++;
         loadCompanyFormData();
@@ -291,18 +301,21 @@ $('.next').on("click", () => {
             alert('Please fill in all the required fields in the job details section.');
             return; // Prevent moving to the next step
         }
+        currentStep++
         saveJobFormData();
         currentJobFormIndex++;
         loadJobFormData();
     }
+    
     $('input, select, textarea').val('');
     active++;
    if (active > $('.step').length) {
         active = $('.step').length;
      }
     updateProgress();
-   
-    
+    steps++
+    console.log(steps);
+    updateButtonVisibility()
 });
 
 
@@ -315,13 +328,17 @@ $('.prev').on("click", () => {
         active=1;
     }
     updateProgress();
+    steps--;
     // Decrement the current form index
     currentCompanyFormIndex--;
     currentJobFormIndex--;
     // Load data for the previous form
     loadCompanyFormData();
     loadJobFormData()
+    updateButtonVisibility()
 });
+
+updateButtonVisibility()
 
 
 });

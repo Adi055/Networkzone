@@ -188,7 +188,18 @@ padding-left: 15px;
     color: white;
     margin-right: 20px;
     cursor: pointer;
-    
+}
+
+
+.button-section .post{
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 
