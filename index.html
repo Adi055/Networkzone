@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <div class="container">
+    <div class="section_one">
+    <p class="post">Post a Job</p>
+    <div class="sidebar">
+    <div class="progress_bar">
+        <ul class="progress_step">
+            <li class="step active">
+                <div class="icon-circle"><i class="fa-regular fa-building icon-1"></i></div>
+                
+                <div class="info">
+                    <span>Step 1</span>
+                    <p >Company Details</p>
+                    
+                </div>
+                
+            </li>
+            <div class="line"></div>
+            <li class="step">
+               <div class="icon-circle">  <i class="fa-solid fa-bag-shopping icon-2"></i></div>
+              
+                <div class="info">
+                    <span>Step 2</span>
+                    <p>Job Details</p>
+                </div>
+                
+            </li>
+            <div class="line"></div>
+            <li class="step">
+                <div class="icon-circle"> <i class="fa-regular fa-file-lines icon-3"></i></div>
+               
+                <div class="info">
+                    <span>Step 3</span>
+                    <p>Review Job</p>
+                </div>
+               
+            </li>
+        </ul>
+    </div>
+    
+</div>
+</div>
+<div class="form_section">
+    <form action="">
+    <div class="first-section form-one form_step active">
+    <div class="description">
+<div>
+<p style="font-weight: 700;">Company Description</p>
+</div>
+<div>
+    <p class="clear">Clear All</p>
+</div>
+</div>
+<div class="form_section1">
+    
+        <div class="row-1">
+            <div>
+                <label for=""><p>Company Name</p></label>
+                    <input type="text" placeholder="Enter Company Name" id="company_name" required>
+            </div>
+            <div>
+                <label for=""><p>Email</p></label>
+                    <input type="email" placeholder="Enter Email" id="email" required>
+            </div>
+        </div>
+        <div class="row-2">
+            <div>
+                <label for=""><p>Phone Number</p></label>
+                    <input type="number" placeholder="Enter Phone Number" id="phone_number">
+            </div>
+            <div>
+                <label for=""><p>Address</p></label>
+                    <input type="text" placeholder="Enter Company Address" id="address">
+            </div>
+        </div>
+        <div class="row-3">
+            <div>
+                <label for="country"><p>Country</p></label>
+                    <select name="country" id="country">
+                        <option value="">Select Country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                    </select>
+            </div>
+            <div>
+                <label for="state"><p>State</p></label>
+                <select name="state" id="state">
+                    <option value="">Select State</option>
+                   
+                </select>
+            </div>
+        </div>
+        <div class="row-4">
+            <div>
+                <label for="city"><p>City</p></label>
+                <select name="city" id="city">
+                    <option value="">Select City</option>
+                    
+                </select>
+            </div>
+            <div>
+                <label for=""><p>Zip Code</p></label>
+                    <input type="number" placeholder="Enter Zip Code" id="zip">
+            </div>
+        </div>
+        <div class="row-5">
+            <div>
+                <label for=""><p>Date of Establish</p></label>
+                <select name="date" id="date">
+                    <option value="">Select Date</option>
+                    <option value="2001">2001</option>
+                    <option value="2006">2006</option>
+                    
+                </select>
+            </div>
+            <div>
+                <label for=""><p>Category</p></label>
+                <select name="category" id="category">
+                    <option value="">Select Category</option>
+                    <option value="Ecommerce">Ecommerce</option>
+                    <option value="Retail">Retail</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-6">
+            <label for=""><p>Company Website</p></label>
+            <input type="text" placeholder="Enter Company Website" id="website">
+        </div>
+        <div class="row-7">
+            <label for=""><p>Company Description</p></label>
+            <textarea id="company_desc"  >
+               
+                </textarea>
+        </div>
+        
+   
+</div>
+</div>
+
+<!-- ------------second form section------------- -->
+<div class="first-section form-two form_step">
+    <div class="description">
+<div>
+<p style="font-weight: 700;">Job Details</p>
+</div>
+<div>
+    <p class="clear">Clear All</p>
+</div>
+</div>
+<div class="form_section2">
+    
+        <div class="row-1">
+            <div>
+                <label for=""><p>Job Title</p></label>
+                    <input type="text" placeholder="Enter Job Title" id="job_title">
+            </div>
+            <div>
+                <label for=""><p>Job Category</p></label>
+                <select name="Job" id="Job">
+                    <option value="">Select Job Category</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Marketing Executive">Marketing Executive</option>
+                </select>
+            </div>
+        </div>
+        <div class="row-2">
+            <div>
+                <label for=""><p>Job Type</p></label>
+                <div class="radio-box">
+                    <div style="margin-right: 10px;">
+                         <span>Full Time</span>   <input type="radio" id="full_time">
+                    </div>
+                    <div style="margin-right: 10px;"> <span>Internship</span> <input type="radio" id="internship"></div>
+                    <div> <span>Part Time</span> <input type="radio" id="part_time"></div>
+                </div>
+                    
+            </div>
+            <div>
+                <label for=""><p>Job Type</p></label>
+                <div class="radio-box">
+                    <div>
+                         <span>WFO</span>   <input type="radio" id="wfo">
+                    </div>
+                    <div style="margin-left: 10px;"> <span>WFH</span> <input type="radio" id="wfh"></div>
+                    <div style="margin-left: 10px;"> <span>Hybrid</span> <input type="radio" id="hybrid"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-3">
+            <div>
+                <label for="monthly"><p>Experience</p></label>
+                <div class="experience">
+                    <div>
+                        <select name="monthly" id="monthly">
+                            <option value="">Monthly</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="margin-left: 10px;" name="currency" id="currency">
+                            <option value="">Currency</option>
+                            <option value="USD">USD</option>
+                            <option value="Rupee">Rupee</option>
+                            <option value="Euro">Euro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="margin-left: 10px;" name="start_date" id="start_date">
+                            <option value="">From</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select style="margin-left: 10px;" name="end_date" id="end_date">
+                            <option value="">To</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <label for=""><p>Job Schedule</p></label>
+                <div class="Job_schedule">
+                    <div style="margin-right: 10px;">
+                         <span>Evening</span>   <input type="radio" id="evening">
+                    </div>
+                    <div style="margin-right: 10px;"> <span>Overnight</span> <input type="radio" id="overnight"></div>
+                    <div> <span>Early Morning</span> <input type="radio" id="early_morning"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-4">
+            <div>
+                <label for="city"><p>Experience</p></label>
+                <select name="Exp" id="Exp">
+                    <option value="">Select Experience</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for=""><p>Vacancy</p></label>
+                    <input type="number" placeholder="No. of Vacancy" id="vacancy">
+            </div>
+        </div>
+        
+        <div class="row-5">
+            <label for=""><p>Job Description</p>
+            <textarea id="job_desc"  >
+              
+                </textarea>
+            </label>
+        </div>
+        
+   
+</div>
+</div>
+
+<div class="form-three form_step">
+<div class="image-section">
+    <div class="bg_image">
+       
+    </div>
+    <div id="company_logo">
+
+    </div>
+</div>
+</div>
+<div class="button-section">
+    <button class="prev" disabled >Back</button>
+    <button class="next" type="button">Next</button>
+</div>
+</form>
+</div>
+</div>
+
+   </div>
+    
+</body>
+</html>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/index.js"></script>
+<!-- <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script> -->
+  

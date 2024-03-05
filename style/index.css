@@ -1,0 +1,322 @@
+.container .progress_step .icon-1,.container .progress_step .icon-2,.container .progress_step .icon-3{
+    font-size: 20px;
+}
+.container{
+    width: 95%;
+    margin: auto;
+ display: flex;
+justify-content: space-evenly;
+}
+
+.container .progress_step li{
+display: flex;
+
+font-family: Poppins;
+font-size: 15px;
+}
+
+/* -------------Progress-bar-------------- */
+
+
+.progress_bar .progress_step .active>.icon-circle{
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+/* -------------Progress-end-------------- */
+
+
+
+
+.container .sidebar{
+   width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   position: relative;
+}
+
+
+.progress_step li .icon-circle{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container  .info{
+    padding-left: 10px;
+}
+
+.container  .info span{
+color: blue;
+font-size: 14px;
+} 
+
+.container  .info p{
+    margin: 0;
+    padding: 0;
+}
+
+.container  .line{
+    height: 60px;
+    width: 1.5px;
+    background-color: rgb(212, 209, 209); 
+   position: relative;
+   left: 90px;
+   padding-bottom: 5px;
+}
+.container .post{
+    font-family: Poppins;
+    font-weight: 700;
+    padding-bottom:3px;
+}
+
+
+/* --------------form-section---------------- */
+.form_section{
+    width:850px;
+    margin-top: 58px;
+   
+}
+.form_section{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+   
+}
+
+.form_section .description{
+display: flex;
+justify-content: space-between;
+
+font-family: Poppins;
+font-size: 15px;
+}
+
+
+.form_section .description .clear{
+color: blue;
+font-size: 14px;
+}
+
+.form_section  .first-section{
+    width: 95%;
+    margin: auto;
+}
+
+.form_section .row-1,.row-2,.row-3,.row-4,.row-5{
+    display: flex;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+}
+.row-6,.row-7{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+}
+.form_section .row-1 input,.form_section .row-2 input,.form_section .row-4 input,.form_section .row-5 input{
+height: 35px;
+width: 380px;
+border-radius:8px;
+border: none;
+background-color: rgb(244, 244, 244); 
+padding-left: 15px;
+
+}
+
+.form_section .row-3 select,.form_section .row-4 select,.form_section .row-5 select{
+    height: 35px;
+    width: 395px;
+    border-radius:8px;
+    border: none;
+    background-color: rgb(244, 244, 244); 
+    padding-left: 15px;
+}
+
+.form_section .row-6 input{
+    height: 35px;
+width: 800px;
+border-radius:8px;
+border: none;
+background-color: rgb(244, 244, 244); 
+padding-left: 15px;
+}
+
+.form_section .row-7 textarea{
+    height: 80px;
+    width: 800px;
+    border-radius:8px;
+    border: none;
+    background-color: rgb(244, 244, 244); 
+    padding-left: 15px;
+}
+
+.form_section .button-section{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.form_section .button-section button:nth-child(1){
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-section button:nth-child(2){
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+
+/* ---------------second form section------------------ */
+
+/* .form-two {
+    display: none;
+} */
+
+
+
+form>div{
+    display: none;
+}
+
+form>div.active{
+    display: block;
+}
+
+.form-two .form_section2 .radio-box{
+display: flex;
+
+}
+
+.form-two .form_section2 .radio-box input{
+    width: 20px;
+}
+
+.form-two .form_section2 .radio-box div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 244); 
+   
+    width: 125px;
+    border-radius: 5px;
+}
+
+.form-two .form_section2 .radio-box span, .Job_schedule span{
+    font-weight: 200;
+    font-family: Poppins;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+.form-two .form_section2 .experience{
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+.form-two .form_section2 .experience select{
+    width: 90px;
+    padding: 5px;
+    display: flex;
+    
+    align-items: center;
+    height: 40px;
+}
+
+.form-two .form_section2 .row-1 select{
+    height: 35px;
+    width: 395px;
+    border-radius:8px;
+    border: none;
+    background-color: rgb(244, 244, 244); 
+    padding-left: 15px;
+}
+
+.form-two .form_section2 .Job_schedule{
+display: flex;
+}
+
+.form-two .form_section2 .Job_schedule div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 244, 244); 
+   
+    width: 125px;
+    border-radius: 5px;
+    height: 38px;
+}
+
+.form-two .form_section2 .Job_schedule input{
+    width: 20px;
+    height: 20px;
+}
+
+
+.form-two .form_section2 textarea{
+    height: 80px;
+    width: 800px;
+    border-radius:8px;
+    border: none;
+    background-color: rgb(244, 244, 244); 
+   
+   
+} 
+
+
+
+/* ------------job review--------- */
+
+
+.bg_image{
+    background-image: url("https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100%;
+    height: 270px;
+   background-size: cover;
+    background-position: center;
+}
+
+.image-section{
+    position: relative;
+}
+
+#company_logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    position: absolute;
+    
+    left: 30px;
+    bottom: -40px;
+    background-image: url("https://st2.depositphotos.com/1065578/7533/i/450/depositphotos_75333451-stock-photo-abstract-geometric-company-logo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
