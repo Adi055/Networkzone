@@ -87,7 +87,6 @@ let companyFormDataArray = []; // Array to store company form data
     let currentStep=1
         
       
-
         function saveCompanyFormData() {
             let companyFormData = {
                 company_name: $('#company_name').val(),
@@ -187,7 +186,6 @@ let companyFormDataArray = []; // Array to store company form data
             $('#currency').val(jobFormData.currency || '');
             $('#start_date').val(jobFormData.start_date || '');
             $('#end_date').val(jobFormData.end_date || '');
-        
             // Populate radio buttons for job schedule
             $('#evening').prop('checked', jobFormData.evening || false);
             $('#overnight').prop('checked', jobFormData.overnight || false);
@@ -224,23 +222,30 @@ let companyFormDataArray = []; // Array to store company form data
 
         function validateJobForm() {
             // Basic validation for required fields in job details section
-            let requiredJobFields = ['#job_title', '#Job', '#full_time', '#internship', '#part_time', '#wfo', '#wfh', '#hybrid', '#monthly', '#currency', '#start_date', '#end_date', '#evening', '#overnight', '#early_morning', '#Exp', '#vacancy', '#job_desc'];
+            let requiredJobFields = ['#job_title', '#Job', '#monthly', '#currency', '#start_date', '#end_date', '#Exp', '#vacancy', '#job_desc'];
         
             for (let field of requiredJobFields) {
-                if ($(field).val() === '' && !$(field).prop('checked')) {
-                  
-                    return false; // Validation failed
+                if ($(field).is(':checkbox')) {
+                    if (!$(field).prop('checked')) {
+                        console.log($(field).val());
+                        return false; // Validation failed
+                    }
+                } else {
+                    if ($(field).val() === '') {
+                        console.log($(field).val());
+                        return false; // Validation failed
+                    }
                 }
-                console.log($(field).val());
             }
         
             // Additional validation for dropdowns or radio groups in job details section
-            if ($('#Job').val() === '') {
+            if ($('#Job').val() === null) {
                 return false; // Validation failed
             }
         
             return true; // Validation passed
         }
+        
         // Load data for the initial form
         loadCompanyFormData();
         loadJobFormData();
@@ -290,13 +295,14 @@ $('.next').on("click", () => {
         currentJobFormIndex++;
         loadJobFormData();
     }
-    // ... (your existing code for updating progress and loading data)
+    $('input, select, textarea').val('');
     active++;
    if (active > $('.step').length) {
         active = $('.step').length;
      }
     updateProgress();
-    $('input, select, textarea').val('');
+   
+    
 });
 
 
